@@ -21,7 +21,7 @@ const Objects = () => {
         camera.position.setZ(30);
 
         const diceGeo = new THREE.IcosahedronGeometry(10, 0);
-        const diceMat = new THREE.MeshBasicMaterial( {color: 0xFF6347, wireframe: true});
+        const diceMat = new THREE.MeshBasicMaterial( {color: 0xFF6347, wireframe: false});
         const dice = new THREE.Mesh(diceGeo, diceMat);
 
         scene.add(dice);
